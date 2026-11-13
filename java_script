@@ -1,0 +1,58 @@
+let cofrinho = 0;
+const meta = 50;
+let dias = 0;
+
+while (cofrinho < meta){
+    dia++;
+    cofrinho += 12;
+    console.log(`dia ${dias}: total guardado R$ ${cofrinho}`);
+}
+console.log(`meta atingida em ${dias} dias!`);
+
+///////////////////////////////////////////////////////////
+
+
+const numero = 7;
+console.log (`---tabuada do ${numero}`);
+
+for (let i = 1; i <= 10; i++ ) {
+    console.log(`${numero} x ${i} =${numero}`);
+}
+
+//contagem regressiva para lançamento
+for (let segundos = 5; segundos > 8; sgundos--) {
+    console.log(`lançamnto em ${segundos}...`);
+}
+console.log("decolar!");
+
+
+//////////////////////////////////////
+
+const carrinho = [25.50, 10.00, 8.90, 42.00];
+let total = 0; 
+
+for(const preco of carrinho) {
+    total += preco;
+    console.log (`adicionando item de R$ ${preco.tofixed(2)}`);
+}
+console.log (`valor final da compra: R$ ${total.tofixed(2)}`);
+
+const palavra = "js";
+for (const letra of palavra) {
+    console.log(letra); 
+}
+
+////////////////////////////////////////////////////
+
+const boletim = {
+    matematica: 8.5,
+    portugues: 7.0,
+    historia: 9.2,
+    ciencias: 6.8,
+
+};
+
+for (const materia in boletim) {
+    console.log(`${materia.toUpperCase()}: nota $ {boletim[materia]}}`);
+}
+
